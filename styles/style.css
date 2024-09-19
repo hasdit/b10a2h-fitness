@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/*Shared Styles*/
+.display-flex{
+    display: flex;
+}
+.text-white{
+    color: rgb(255, 255, 255);
+}
+.text-lte-white{
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn-primary{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    gap: 10;
+    margin: 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*header style*/
+.bg-main{
+    background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 150%);
+}
+.bg-main, .navbar{
+    max-width: 1440px;
+    max-height: auto;
+}
+/*navbar  style*/
+.brand{
+    color: rgb(230, 83, 60);
+font-family: Inter;
+font-size: 36px;
+font-weight: 800;
+letter-spacing: 2px;
+}
+#home{
+    width: 92px;
+    height: 38px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px 8px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links {
+    box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    list-style: none;
+    width: 440px;
+    height: 46px;
+    justify-content: center;
+    padding: 14px;
+    gap: 47px;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 0%;
+}
+/*banner style*/
+.banner{
+    justify-content: space-around;
+}
+.banner-title{
+    font-size: 78px;
+    font-weight: 800;
+}
+#shape{
+    font-family: miama;
+    font-size: 78px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.banner-description{
+    width: 520px;
+    height: 46px;
+    padding: 0;
+    gap: 28;
+    margin: 28px 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-family: inter;
+}
+.btn-d{
+    background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    gap: 10;
+    margin: 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*main section styles*/
+/*Change your habits styles*/
+.suggestion-imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.suggestion-img{
+    border-radius: 50%;
+}
+/* responsive for small device (breakpont:576px) */
+
+@media screen and (max-width: 576px) {
+    .bg-main{
+        max-height: fit-content;
+    }
+    .banner{
+        display: grid;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: none;
+        padding: auto;
+    }
+    .nav-link{
+    padding: 0;
+    }
+    .banner-title{
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        margin: 0;
+    }
+    .banner-description{
+      width: fit-content;
+      height: fit-content;
+    }
+    .hero-btn{
+        display: grid;
+    }
+    .btn-primary{
+    margin-bottom: 20px;
+}
+.banner-img{
+    justify-content: center;
+    padding: 20px 20px 0 20px;
+}
+}
